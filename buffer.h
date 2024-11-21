@@ -12,8 +12,8 @@
 
 typedef struct {
     char lines[BUFFER_SIZE][LINE_LENGTH];
-    int producer_index;
-    int consumer_index;
+    int p_index;
+    int c_index;
     int count;
     pthread_mutex_t mutex;
     pthread_cond_t full;
